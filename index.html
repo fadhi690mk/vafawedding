@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wedding card</title>
+    <link rel="manifest" href="manifest.json">
+    <style>
+        body{
+            background-image: url('./images/bg.png');
+        }
+        .background {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .background #image1 {
+            position: relative;
+            width: 20rem;
+            opacity: 0;
+            animation: fadeInOut 30s linear infinite;
+        }
+        .background #image2 {
+            position: relative;
+            top: 8rem;
+            width: 16rem;
+            opacity: 0;
+            animation: fadeInOut 15s linear infinite;
+        }
+        .background #image3 {
+            position: relative;
+            top: 7.5rem;
+            left: -1rem;
+
+            width: 16rem;
+            opacity: 0;
+            animation: fadeInOut 15s linear infinite;
+        }
+        .background #image4 {
+            position: relative;
+            top: 6.5rem;
+            left: -1rem;
+            width: 16rem;
+            opacity: 0;
+            animation: fadeInOut 15s linear infinite;
+        }
+        .background #image5 {
+            position: relative;
+            top: -10rem;
+            width: 28rem;
+            opacity: 0;
+            animation: forframe 105s linear infinite;
+        }
+        .background #image6 {
+            position: relative;
+            left: -1rem;
+
+            top: -21rem;
+            width: 17rem;
+            opacity: 0;
+            animation: fadeInOut 15s linear infinite;
+        }
+        .background #image7 {
+            position: relative;
+            top: -13rem;
+            width: 25rem;
+            opacity: 0;
+            animation: fadeInOut 5s linear infinite;
+        }
+        .background a #image8 {
+            position: relative;
+            top: -14rem;
+            width: 25rem;
+            opacity: 0;
+            animation: fadeInOut 15s linear infinite;
+        }
+        .background #image9 {
+            position: relative;
+            top: -14rem;
+            width: 25rem;
+        }
+
+        .background a #image10 {
+            position: relative;
+            top: -30rem;
+            width: 7rem;
+            opacity: 0;
+            animation: fadeInOut 15s linear infinite;
+        }
+        @keyframes forframe {
+	0% {
+		opacity: 1;
+		transform: rotate(-360deg) scale(1);
+	}
+
+	100% {
+		opacity: 1;
+		transform: rotate(0) scale(1);
+	}
+}
+
+        @keyframes fadeInOut {
+            0%, 100% {
+                opacity: 0;
+            }
+            20%, 80% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="./bgm.mp3" type="audio/mp3">
+    </audio>
+    <div class="background">
+        <img id="image1" src="./images/heading-the wedding of.png" alt="Image 1">
+        <img id="image2" src="./images/groom.png" alt="Image 2">
+        <img id="image3" src="./images/and.png" alt="Image 3">
+        <img id="image4" src="./images/bride.png" alt="Image 4">
+        <img id="image5" src="./images/frame1.png" alt="Image 5">
+        <img id="image6" src="./images/request the pleasure.png" alt="Image 6">
+        <img id="image7" src="./images/please come at.png" alt="Image 7">
+        <a href="https://maps.google.com/maps?q=11.24625728211208,76.12401288878654"><img id="image8" src="./images/auditorium.png" alt="Image 8"></a>
+        <img id="image9" src="./images/add3-removebg-preview.png" alt="Image 9">
+        <a href="https://maps.google.com/maps?q=11.24625728211208,76.12401288878654"><img id="image10" src="./images/locationremove.png" alt="Image 10"></a>
+    </div>
+</body>
+</html>
